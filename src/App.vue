@@ -21,12 +21,26 @@ export default {
 
 
 <style lang="scss">
+@font-face {
+	font-family: 'font';
+	src: url('../public/font_1_honokamarugo_1.1.ttf');
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'font';
+  font-weight: 100;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  letter-spacing: .3em;
   color: #2c3e50;
+  h1 {
+    font-size: 8vw;
+  }
+}
+
+body::-webkit-scrollbar{
+ display:none;
 }
 
 #mainView {

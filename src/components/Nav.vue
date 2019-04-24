@@ -8,9 +8,17 @@
 
       <div class="msk" v-bind:class="{none: mskchang}" @click="nav_hamburger"></div>
 
-      <div class="navmenu" v-bind:class="{navmenutrue: navmenutrue, navmenufales: navmenufales}">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
+      <div class="navmenu" v-bind:class="{navmenutrue: navmenutrue}">
+        <div class="navmenuNum1" v-bind:class="{navmenutrue1: navmenutrue, navmenufales1: navmenufales}"></div>
+        <div class="navmenuNum2" v-bind:class="{navmenutrue2: navmenutrue, navmenufales2: navmenufales}"></div>
+        <div class="navmenuNum3" v-bind:class="{navmenutrue3: navmenutrue, navmenufales3: navmenufales}"></div>
+        <div class="navmenuNum4" v-bind:class="{navmenutrue4: navmenutrue, navmenufales4: navmenufales}"></div>
+        <div class="navmenuNum5" v-bind:class="{navmenutrue5: navmenutrue, navmenufales5: navmenufales}"></div>
+        <div class="link" v-bind:class="{linktrue: navmenutrue, linkfales: navmenufales}" @click="nav_hamburger">
+          <router-link to="/">Home</router-link> |
+          <router-link to="/about">About</router-link> |
+          <router-link to="/works">Works</router-link>
+        </div>
       </div>
     </div>
 </template>
@@ -45,10 +53,13 @@ export default {
 @mixin nvanime($number, $esing) {
   animation: $number 800ms $esing 0s forwards;
 }
+@mixin nvchange($number, $time) {
+  animation: $number 0.05s linear $time 3 alternate forwards;
+}
 #nav {
   .straight {
     position: fixed;
-    z-index: 5;
+    z-index: 10;
     top: 2vw;
     right: 2vw;
     width: 100px;
@@ -161,50 +172,151 @@ export default {
     animation: straight6 0s linear 400ms forwards;
   }
   .navmenu {
-    position: absolute;
-    z-index: 3;
+    position: fixed;
+    z-index: 8;
     top: 0;
     right: 0;
     width: 225px;
     height: 100vh;
-    background: #fff;
+    .link {
+      position: relative;
+      z-index: 9;
+    }
+    .navmenuNum1,
+    .navmenuNum2,
+    .navmenuNum3,
+    .navmenuNum4,
+    .navmenuNum5 {
+      position: fixed;
+      right: 0;
+      width: 225px;
+      height: 20vh;
+      background: #dff;
+    }
+    .navmenuNum1 {
+      top: 0;
+    }
+    .navmenuNum2 {
+      top: 20vh;
+    }
+    .navmenuNum3 {
+      top: 40vh;
+    }
+    .navmenuNum4 {
+      top: 60vh;
+    }
+    .navmenuNum5 {
+      top: 80vh;
+    }
+    @keyframes navtrue {
+      from {
+        opacity: 1;
+      }
+
+      to {
+        opacity: 0;
+      }
+    }
+    @keyframes navfales {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .navmenufales1,
+    .navmenufales2,
+    .navmenufales3,
+    .navmenufales4,
+    .navmenufales5 {
+      opacity: 0;
+    }
+    .navmenutrue1,
+    .navmenutrue2,
+    .navmenutrue3,
+    .navmenutrue4,
+    .navmenutrue5 {
+      opacity: 1;
+    }
+    .navmenutrue1 {
+      @include nvchange(navtrue, 0.2s);
+    }
+    .navmenutrue2 {
+      @include nvchange(navtrue, 0.15s);
+    }
+    .navmenutrue3 {
+      @include nvchange(navtrue, 0.1s);
+    }
+    .navmenutrue4 {
+      @include nvchange(navtrue, 0.05s);
+    }
+    .navmenutrue5 {
+      @include nvchange(navtrue, 0s);
+    }
+    .navmenufales1 {
+      @include nvchange(navfales, 0s);
+    }
+    .navmenufales2 {
+      @include nvchange(navfales, 0.05s);
+    }
+    .navmenufales3 {
+      @include nvchange(navfales, 0.1s);
+    }
+    .navmenufales4 {
+      @include nvchange(navfales, 0.15s);
+    }
+    .navmenufales5 {
+      @include nvchange(navfales, 0.2s);
+    }
+    @keyframes linktrue {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+    }
+    @keyframes linkfalse {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .linktrue {
+      opacity: 1;
+      animation: linktrue .1s linear 0s forwards;
+    }
+    .linkfales {
+      opacity: 0;
+      animation: linkfalse .1s linear 0.55s forwards;
+    }
+  }
+  @keyframes nonenav {
+    from {
+    z-index: 8;
+    }
+    to {
+    z-index: -10;
+    }
+  }
+  .navmenutrue {
+    animation: nonenav 0s linear 0.55s forwards;
   }
   .msk {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
-    background: #000;
-    opacity: .2;
+    background: #afafaf;
+    opacity: .3;
     width: 100vw;
     height: 100vh;
   }
   .none {
     display: none;
-  }
-  @keyframes navfales {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(0%);
-    }
-  }
-  @keyframes navtrue {
-    from {
-      transform: translateX(0%);
-    }
-    to {
-      transform: translateX(100%);
-    }
-  }
-  .navmenutrue {
-    animation: navtrue 500ms linear 0s forwards;
-    // right: -20%;
-  }
-  .navmenufales {
-    animation: navfales 500ms linear 0s forwards;
-    // right: 0%;
   }
 }
 </style>

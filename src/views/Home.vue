@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>hoge</h1>
+    <h1>Welcome To<br>Tsurumaki Portfolio</h1>
   </div>
 </template>
 
@@ -9,11 +9,8 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  h1 {
-    font-size: 15vw;
-  }
 }
 </style>

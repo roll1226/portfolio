@@ -25,6 +25,14 @@ const router = new Router({
       meta: {
         title: 'Portfolio / About'
       }
+    },
+    {
+      path: '/works',
+      name: 'works',
+      component: () => import('./views/Works.vue'),
+      meta: {
+        title: 'Portfolio / Works'
+      }
     }
   ]
 })
