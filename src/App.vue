@@ -35,7 +35,7 @@ export default {
   letter-spacing: .3em;
   color: #2c3e50;
   h1 {
-    font-size: 8vw;
+    font-size: 7vw;
   }
 }
 

@@ -14,10 +14,16 @@
         <div class="navmenuNum3" v-bind:class="{navmenutrue3: navmenutrue, navmenufales3: navmenufales}"></div>
         <div class="navmenuNum4" v-bind:class="{navmenutrue4: navmenutrue, navmenufales4: navmenufales}"></div>
         <div class="navmenuNum5" v-bind:class="{navmenutrue5: navmenutrue, navmenufales5: navmenufales}"></div>
-        <div class="link" v-bind:class="{linktrue: navmenutrue, linkfales: navmenufales}" @click="nav_hamburger">
-          <router-link to="/">Home</router-link> |
-          <router-link to="/about">About</router-link> |
-          <router-link to="/works">Works</router-link>
+        <div class="link" v-bind:class="{linktrue: navmenutrue, linkfales: navmenufales}">
+          <div @click="nav_hamburger" id="linkH">
+            <router-link to="/">Home</router-link>
+          </div>
+          <div @click="nav_hamburger" id="linkA">
+            <router-link to="/about">About</router-link>
+          </div>
+          <div @click="nav_hamburger" id="linkW">
+            <router-link to="/works">Works</router-link>
+          </div>
         </div>
       </div>
     </div>
@@ -76,13 +82,6 @@ export default {
     width: 75px;
     height: 4px;
     background: #000;
-  }
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
   }
   .ns1,
   .ms1,
@@ -178,9 +177,42 @@ export default {
     right: 0;
     width: 225px;
     height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
     .link {
       position: relative;
       z-index: 9;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      align-items: center;
+      height: 35%;
+      a {
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 35px;
+        color: #2c3e50;
+        &.router-link-exact-active {
+          color: #03f;
+        }
+        &::after {
+          content: "";
+          display:  inline-block;
+          position: absolute;
+          transform: translateY(35px) translateX(-123px);
+          width: 0px;
+          height: 3px;
+          background: #0cf;
+          transition: all 150ms linear 0s;
+        }
+        &:hover {
+          &::after{
+            width: 120px;
+          }
+        }
+      }
     }
     .navmenuNum1,
     .navmenuNum2,
