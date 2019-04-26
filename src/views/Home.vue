@@ -12,5 +12,8 @@
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  h1 {
+    font-size: 7vw;
+  }
 }
 </style>
