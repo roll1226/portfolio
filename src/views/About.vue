@@ -68,7 +68,7 @@ export default {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 37vw;
+    top: 34vw;
     #meBtn p,
     #skillBtn p {
       cursor: pointer;
@@ -94,6 +94,11 @@ export default {
     }
     .activeSkill {
       color: #0af;
+    }
+  }
+  @media screen and (max-width: 320px){
+    .aboutnac {
+      top: 22.5vw;
     }
   }
 }
