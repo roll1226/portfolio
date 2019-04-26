@@ -1,11 +1,11 @@
 <template>
   <div class="about">
     <div class="aboutnac">
-      <div @click="me" id="meBtn" v-bind:class="{activeMe: activeMe}">
-        <p>Me</p>
+      <div id="meBtn" v-bind:class="{activeMe: activeMe}">
+        <p @click="me">Me</p>
       </div>
-      <div @click="skill" id="skillBtn" v-bind:class="{activeSkill: activeSkill}">
-        <p>Skill</p>
+      <div id="skillBtn" v-bind:class="{activeSkill: activeSkill}">
+        <p @click="skill">Skill</p>
       </div>
     </div>
     <div class="me" v-if="changeabout">
