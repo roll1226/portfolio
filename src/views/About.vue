@@ -8,12 +8,14 @@
         <p @click="skill">Skill</p>
       </div>
     </div>
-    <div class="me" v-if="changeabout">
-      <Me></Me>
-    </div>
-    <div class="skill" v-else>
-      <Skill></Skill>
-    </div>
+    <transition name="fade">
+      <div class="me" key=1 v-if="changeabout">
+        <Me></Me>
+      </div>
+      <div class="skill" key=2 v-else>
+        <Skill></Skill>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -96,5 +98,15 @@ export default {
       top: 26.5vw;
     }
   }
+}
+.fade-enter-active,
+.fade-leave-active {
+    position: absolute;
+    transition: opacity .5s
+ }
+
+.fade-enter,
+.fade-leave-active {
+    opacity: 0
 }
 </style>

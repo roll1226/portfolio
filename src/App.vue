@@ -2,7 +2,9 @@
   <div id="app">
     <Bg></Bg>
     <Nav></Nav>
-    <router-view id="mainView"></router-view>
+    <transition name="mainfade">
+      <router-view id="mainView"></router-view>
+    </transition>
     <!-- <a href="#" id="return-top" v-scroll-to="'#nav'">Top</a> -->
   </div>
 </template>
@@ -47,5 +49,16 @@ body::-webkit-scrollbar{
 #mainView {
   position: relative;
   z-index: 1;
+}
+
+.mainfade-enter-active,
+.mainfade-leave-active {
+    position: absolute;
+    transition: opacity .5s
+ }
+
+.mainfade-enter,
+.mainfade-leave-active {
+    opacity: 0
 }
 </style>
