@@ -29,11 +29,15 @@ export default {
 #app {
   font-family: 'font';
   font-weight: 100;
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   letter-spacing: .3em;
   color: #2c3e50;
+}
+
+html,body{
+  overflow: hidden
 }
 
 body::-webkit-scrollbar{

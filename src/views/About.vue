@@ -9,21 +9,23 @@
       </div>
     </div>
     <div class="me" v-if="changeabout">
-      <h1>
-        鶴巻智康とは
-      </h1>
-      <p>
-        私は一度大学に通っていたが、自分のやりたいことがうまく合わず中退をしました。<br>その後HAL東京に入学をしてプログラム、特にフロントエンドに興味を持ち多くの言語を学んでいます。
-      </p>
+      <Me></Me>
     </div>
     <div class="skill" v-else>
-      <h1>スキル</h1>
+      <Skill></Skill>
     </div>
   </div>
 </template>
 
 <script>
+import Me from '@/components/Me.vue'
+import Skill from '@/components/Skill.vue'
+
 export default {
+  components: {
+    Me,
+    Skill
+  },
   data () {
     return {
       changeabout: true,
@@ -55,20 +57,13 @@ export default {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  h1 {
-    font-size: 50px;
-  }
-  p {
-    margin:  20px;
-    font-size: 20px;
-  }
   .aboutnac {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 10em;
+    top: 14vw;
     #meBtn p,
     #skillBtn p {
       cursor: pointer;
@@ -97,14 +92,8 @@ export default {
     }
   }
   @media screen and (max-width: 760px){
-      h1 {
-        font-size: 24px;
-      }
-      p {
-        font-size: 15px;
-      }
     .aboutnac {
-      top: 24.5vw;
+      top: 26.5vw;
     }
   }
 }
