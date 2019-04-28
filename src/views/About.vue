@@ -68,7 +68,7 @@ export default {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 33vw;
+    top: 10em;
     #meBtn p,
     #skillBtn p {
       cursor: pointer;
@@ -96,9 +96,15 @@ export default {
       color: #0af;
     }
   }
-  @media screen and (max-height: 620px){
+  @media screen and (max-width: 760px){
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 15px;
+      }
     .aboutnac {
-      top: 22.5vw;
+      top: 24.5vw;
     }
   }
 }
