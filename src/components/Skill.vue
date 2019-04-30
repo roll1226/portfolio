@@ -1,6 +1,6 @@
 <template>
   <div id="skillChart">
-    <SkillChart :width="300" :height="280"></SkillChart>
+    <SkillChart></SkillChart>
   </div>
 </template>
 
@@ -39,15 +39,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#pie-chart {
-  height: 500vw;
-}
 #skillChart {
-  margin-top: 30%;
+  margin-top: 50%;
+  width: 390px;
+  height: 390px;
 }
 @media screen and (max-width: 760px) {
   #skillChart {
     margin-top: 10%;
+    width: 300px;
+    height: 280px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #skillChart {
+    margin-top: 17%;
   }
 }
 </style>

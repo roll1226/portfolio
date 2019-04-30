@@ -93,6 +93,11 @@ export default {
       color: #0af;
     }
   }
+  @media screen and (max-width: 1024px){
+    .aboutnac {
+      top: 37vw;
+    }
+  }
   @media screen and (max-width: 760px){
     .aboutnac {
       top: 26.5vw;
