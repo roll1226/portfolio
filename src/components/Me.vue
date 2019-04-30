@@ -76,8 +76,5 @@ p {
   p {
     font-size: 15px;
   }
-  #sns {
-    margin-top: 17%;
-  }
 }
 </style>
