@@ -6,6 +6,7 @@
         <img src="../../public/ssi.png" alt="SSIロゴ">
       </a>
     </div>
+    <p>スマートフォン非対応(PCのスペックによっては上手く描画出来ない時があります)</p>
   </div>
 </template>
 
@@ -19,11 +20,16 @@
   align-items: center;
   h1 {
     font-size: 7vw;
+    margin-bottom: 10px;
   }
   a {
     margin: 30px;
     img {
       width: 60%;
+      transition: all 1s ease 0s;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }
