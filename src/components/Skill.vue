@@ -51,7 +51,7 @@ export default {
     height: 280px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-height: 568px) {
   #skillChart {
     margin-top: 17%;
   }
