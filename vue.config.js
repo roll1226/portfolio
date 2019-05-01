@@ -1,9 +1,9 @@
 module.exports = {
   publicPath: '',
   outputDir: 'docs',
-  assetsDir: undefined,
-  runtimeCompiler: undefined,
-  productionSourceMap: undefined,
-  parallel: undefined,
-  css: undefined
+
+  pwa: {
+    themeColor: '#2196f3',
+    msTileColor: '#ffffff'
+  }
 }

@@ -1,16 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import vuescrolltop from 'vue-scrollto'
 import 'reset-css';
 
 Vue.use(Router)
-Vue.use(vuescrolltop)
 
 const router = new Router({
   base: process.env.BASE_URL,
-  routes: [
-    {
+  routes: [{
       path: '/',
       name: 'home',
       component: Home,

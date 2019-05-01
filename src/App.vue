@@ -5,7 +5,6 @@
     <transition name="mainfade">
       <router-view id="mainView"></router-view>
     </transition>
-    <!-- <a href="#" id="return-top" v-scroll-to="'#nav'">Top</a> -->
   </div>
 </template>
 

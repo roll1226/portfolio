@@ -3,7 +3,7 @@
     <h1>作品集</h1>
     <div>
       <a href="https://roll1226.github.io/SOLAR-SYSTEM-INFORMATION-SSI/html/index.html" target="block">
-        <img src="../../public/ssi.png" alt="SSIロゴ">
+        <img src="../../public/img/ssi.png" alt="SSIロゴ">
       </a>
     </div>
     <p>スマートフォン非対応(PCのスペックによっては上手く描画出来ない時があります)</p>

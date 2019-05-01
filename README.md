@@ -1,4 +1,4 @@
-# portfolio
+# pwa_stady
 
 ## Project setup
 ```
