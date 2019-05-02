@@ -17,7 +17,7 @@ importScripts(
   "precache-manifest.ab37f0d49bae860566a3f78b7aea4485.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "pwa_stady"});
+workbox.core.setCacheNameDetails({prefix: "roll1226 Portfolio"});
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
