@@ -24,7 +24,7 @@ export default {
 <style lang="scss">
 @font-face {
 	font-family: 'font';
-	src: url('../public/font_1_honokamarugo_1.1.ttf');
+	src: url('../public/font_1_honokamarugo_1.1.woff') format('woff');
 }
 
 #app {
