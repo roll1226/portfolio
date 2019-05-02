@@ -27,7 +27,8 @@ export default {
 }
 </script>
 
-<style lang="scss">
+
+<style lang="scss" scoped>
 h1 {
   font-size: 50px;
   margin-top: 20%;

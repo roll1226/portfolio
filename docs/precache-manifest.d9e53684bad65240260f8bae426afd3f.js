@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "fonts/font_1_honokamarugo_1.1.f322b467.ttf"
   },
   {
-    "revision": "3478c88c8d351d574f2b",
-    "url": "css/chunk-781c11da.2b610705.css"
+    "revision": "65700021caaf0fb013c8",
+    "url": "css/chunk-60f9d7cd.55ec86cf.css"
   },
   {
     "revision": "c8eb8c9c4a42de496a97",
@@ -28,19 +28,19 @@ self.__precacheManifest = [
     "url": "css/chunk-vendors.22898054.css"
   },
   {
-    "revision": "16ae0eed67d9d4b199f9",
-    "url": "js/app.98784bc3.js"
+    "revision": "8c5c51fba273e851b21a",
+    "url": "js/app.e9dcdb4a.js"
   },
   {
-    "revision": "3478c88c8d351d574f2b",
-    "url": "js/chunk-781c11da.8b874e0c.js"
+    "revision": "65700021caaf0fb013c8",
+    "url": "js/chunk-60f9d7cd.59a6f85f.js"
   },
   {
     "revision": "818abfd8c52c30bc2e8d46541850b7fc",
     "url": "img/ssi.818abfd8.png"
   },
   {
-    "revision": "b465b199a202e5cfd3addde19c822b7d",
+    "revision": "ae0b0662ff1a7f69b6c590044869cb6b",
     "url": "index.html"
   },
   {
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "img/ssi.png"
   },
   {
-    "revision": "16ae0eed67d9d4b199f9",
+    "revision": "8c5c51fba273e851b21a",
     "url": "css/app.d61660cc.css"
   }
 ];
