@@ -93,7 +93,7 @@ export default {
       color: #0af;
     }
   }
-  @media screen and (max-height: 1366px){
+  @media screen and (max-width: 1024px){
     .aboutnac {
       top: 37vw;
     }
