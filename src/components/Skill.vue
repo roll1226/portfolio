@@ -44,6 +44,13 @@ export default {
   width: 390px;
   height: 390px;
 }
+@media screen and (max-height: 1366px) {
+  #skillChart {
+    margin-top: 50%;
+    width: 420px;
+    height: 420px;
+  }
+}
 @media screen and (max-width: 760px) {
   #skillChart {
     margin-top: 10%;

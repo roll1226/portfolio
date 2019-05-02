@@ -31,7 +31,7 @@ export default {
 <style lang="scss" scoped>
 h1 {
   font-size: 50px;
-  margin-top: 20%;
+  margin-top: 80px;
 }
 p {
   margin:  20px;
@@ -42,7 +42,7 @@ p {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  margin-top: 20%;
+  margin-top: 80px;
   a {
     padding: 20px;
     border-radius: 20px;
@@ -71,12 +71,40 @@ p {
     }
   }
 }
-@media screen and (max-width: 760px){
+@media screen and (max-width: 350px){
   h1 {
     font-size: 24px;
+    margin-top: 40px;
   }
   p {
     font-size: 15px;
+  }
+  #sns {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 760px){
+  h1 {
+    font-size: 24px;
+    margin-top: 40px;
+  }
+  p {
+    font-size: 15px;
+  }
+  #sns {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-height: 812px) {
+  h1 {
+    font-size: 30px;
+    margin-top: 70px;
+  }
+  p {
+    font-size: 20px;
+  }
+  #sns {
+    margin-top: 70px;
   }
 }
 </style>
