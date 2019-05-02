@@ -30,6 +30,7 @@ export default {
 <style lang="scss">
 h1 {
   font-size: 50px;
+  margin-top: 20%;
 }
 p {
   margin:  20px;
@@ -40,7 +41,7 @@ p {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  margin-top: 4%;
+  margin-top: 20%;
   a {
     padding: 20px;
     border-radius: 20px;

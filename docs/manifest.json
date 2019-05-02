@@ -1,7 +1,8 @@
 {
   "name": "roll1226 Portfolio",
   "short_name": "roll1226 Portfolio",
-  "icons": [{
+  "icons": [
+    {
       "src": "./img/icons/android-chrome-48x48.png",
       "sizes": "48x48",
       "type": "image/png"

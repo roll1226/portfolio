@@ -14,10 +14,10 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.ab37f0d49bae860566a3f78b7aea4485.js"
+  "precache-manifest.b4def12572728fcffa9aae7abffa5112.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "roll1226 Portfolio"});
+workbox.core.setCacheNameDetails({prefix: "pwa_stady"});
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
